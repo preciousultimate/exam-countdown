@@ -91,11 +91,11 @@ const words = [
     const action = Math.floor(Math.random() * words.length);
 const randomQuote =() =>{
     const action = Math.floor(Math.random() * words.length);
-        const link= 'https://www.frontendmentor.io?ref=challenge'
+        const link= 'https://preciousultimate/github.io/exam-countdown/'
     
     document.querySelector('.qoute').innerHTML=(words[action]);
 
-    document.querySelector('div a').href =`whatsapp://send?text=${words[action]}${link}`
+    document.querySelector('div a').href =`whatsapp://send?text=${words[action]} from ${link}`
 
 }
   randomQuote()
@@ -105,7 +105,7 @@ const randomQuote =() =>{
   const showError = () => {
     const error = document.querySelector('#error');
     error.style.display = 'block';
-    error.textContent = 'You blocked this site notification. To allow notification, go to you your browser site setting, and then allow nottification';
+    error.textContent = 'You blocked this site notification. To allow notification, go to you your browser setting, and then allow nottification';
 }
 
 const showNotification = () => {
@@ -125,7 +125,7 @@ const showNotification = () => {
     // navigate to a URL when clicked
     notification.addEventListener('click', () => {
 
-        window.open('https://www.javascripttutorial.net/web-apis/javascript-notification/', '_blank');
+        window.open('https://preciousultimate/github.io/exam-countdown/', '_blank');
     });
 }
 const api=()=>{

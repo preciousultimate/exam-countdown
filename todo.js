@@ -226,7 +226,7 @@ const showNotification = () => {
     // navigate to a URL when clicked
     notification.addEventListener('click', () => {
 
-        window.open('https://www.javascripttutorial.net/web-apis/javascript-notification/', '_blank');
+        window.open('https://preciousultimate/github.io/exam-countdown/todo.html', '_blank');
     });
 }
 const permit = setInterval(() => {
@@ -244,22 +244,3 @@ const permit = setInterval(() => {
 if ( notifyinMinutes === 30 || notifyinHours === 12 || notifyinHours === 24) {
 showNotification();
 }
-
-
-// function onDragStart (event) {
-//     event.dataTransfer.setData('text/plain', event.target.id)
-//     event.currentTarget.style.color ='yellow';
-// }
-// function onDragOver(event) {
-//     event.preventDefault();
-    
-// }
-// function onDrop(event) {
-//     const id = event.dataTransfer.getData('text');
-//     const draggableElement= document.getElementById(id);
-//     const dropzone = event.target;
-//     dropzone.appendChild(draggableElement)
-//     event.dataTransfer.clearData();
-// }
-
-
