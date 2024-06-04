@@ -169,10 +169,10 @@ document.querySelector('#seconds').innerHTML= timeinSeconds;
     document.querySelector('.qoute').style.marginLeft ="50px "
     }
     
-    // if(timeinSeconds === 45 || timeinSeconds === 25 ){
-    //     randomQuote()
+     if(timeinSeconds === 45 || timeinSeconds === 25 ){
+         randomQuote()
         
-    // }
+    }
     
     }, 1000)
     
