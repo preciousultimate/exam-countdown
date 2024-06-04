@@ -91,7 +91,7 @@ const words = [
     const action = Math.floor(Math.random() * words.length);
 const randomQuote =() =>{
     const action = Math.floor(Math.random() * words.length);
-        const link= 'https://preciousultimate/github.io/exam-countdown/'
+        const link= 'https://preciousultimate.github.io/exam-countdown/'
     
     document.querySelector('.qoute').innerHTML=(words[action]);
 
@@ -110,7 +110,7 @@ const randomQuote =() =>{
 
 const showNotification = () => {
     // create a new notification
-    const notification = new Notification(' Hi, from Radiography Countdown', {
+    const notification = new Notification(' Hi', {
         body: `Please Study Hard! ${words[action]} `,
         icon: './radioactive.png',
         vibrate: true
