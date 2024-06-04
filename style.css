@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Variables */
+  :root{
+    --BG:  hsl(234, 17%, 12%);
+    --TIMERCOLOR:yellow;
+     --BTNBG: hsl(237, 18%, 59%);
+    /* --COLOR: */
+    --HEADERCOLOR: hsl(0, 0%, 100%);
+  }
+  
+  /* General Styles */
+  html,  body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+}
+
+body{
+  padding: 10px;
+  font-family: Libre Franklin;
+  margin: 10px;
+  background: var(--BG);
+  background-image: url('../bg-stars.svg');
+  background-repeat: no-repeat;
+  line-height: 1.5;
+  font-size: 14px;
+  color: var(--BTNBG);
+  overflow-x: hidden;
+  margin-bottom: 0px;
+}
+header{
+  display: grid;
+  place-content: center;
+  margin: auto;
+  
+  
+}
+main div{
+  display: flex;
+  justify-content: center;
+  
+  
+}
+header h1{
+  margin-top: 30px;
+  color: var(--HEADERCOLOR);
+  margin-bottom: 10px;
+  letter-spacing: 5px;
+  font-size: 18px;
+
+}
+header p{
+  margin: auto;
+  padding-bottom: 40px;
+  font-size: 20px;
+
+}
+  main div{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  div p{
+    
+    text-transform: uppercase;
+  }
+  section{
+    display: grid;
+    place-content: center;
+    
+  }
+  h2{
+    display: none;
+  }
+  main section img {
+    margin: 25px auto;
+    
+  }
+  main hr{
+    width: 25%;
+    border: 2px solid hsl(237, 18%, 59%);
+    margin: auto;
+
+  }
+  main section blockquote{
+    padding: 10px;
+    border-left: 5px solid hsl(237, 18%, 59%) ;
+   align-items: center;
+   color: var(--TIMERCOLOR);
+   font-size: 23px;
+   font-style: italic;
+
+  }
+  section div{
+    position: relative;
+    width: 22%;
+    margin: -18px 75%;
+  }
+  section button{
+    border-radius: 20px;
+    background: hsl(235, 16%, 14%);
+    border:  transparent;
+    box-shadow: 0 7px 5px -1px hsl(240, 17%, 5%) ;
+  }
+  section button img{
+    margin-top: 1px;
+    margin-bottom: -2px;
+  }
+  section div a{
+    /* position: absolute; */
+    /* margin-top: 14px; */
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    
+    /* width: 10%; */
+  }
+  .section-p{
+    margin-top: 10px;
+  }
+  section a{
+    margin-bottom: -120px;
+    color: yellow;
+  }
+  
+  footer{
+    display: grid;
+    place-content: center;
+    font-size: 20px;
+    padding: 15px;
+    background-image: url('../pattern-hills.svg');
+    /* object-fit: contain; */
+    margin-top: 9px;
+    padding-top: 10px;
+  }
+  
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  } 
+  
+   @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 15s linear;
+    }
+  } 
+  .section{
+    /* position: absolute; */
+    width: 35%;
+    margin: auto;
+    
+    
+  
+  }
+  .section a{
+    padding-top: 40px;
+    color: #fff;
+    border-radius: 50%;
+    text-decoration: none;
+    ;
+  }
+  .section img{
+    width: 65%;
+    margin-top: 10px;
+    margin-bottom: 10px
+    /* padding: 10px; */
+  }
+  
+  
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  } 
+  /* Block */
+  .main-div p{
+   padding: 10px;
+   background-color:hsl(236, 21%, 26%);
+   border-radius: 8px;
+   color: var(--TIMERCOLOR);
+   font-size: 2.5em;
+   font-weight: bold;
+   height: auto;
+   margin-bottom: 20px;
+   gap: 20px;
+  }
+.main-div2 {
+  font-size: 13px;
+  gap: 25px;
+}
+.main-div2 p:nth-of-type(1){
+  
+  text-indent: -2px;
+  
+}
+.main-div2 p:nth-of-type(2){
+  text-indent: 25px;
+  
+}
+.main-div2 p:nth-of-type(3){
+  text-indent: 10px;
+  
+}
+.main-div2 p:nth-of-type(4){
+  text-indent: 1px;
+  
+}
+#error{
+  color: yellow;
+}
+
+  /* .attribution{
+    cursor: pointer;
+    position: relative;
+    margin: 98px auto;
+  } */
+
+  @media screen and  (min-width: 768px){
+
+main div{
+  justify-content: space-evenly;
+}
+.main-div2 p:nth-of-type(1){
+  text-indent: 20px;
+}
+.main-div2 p:nth-of-type(2){
+  text-indent: 15px;
+}
+main hr{
+  display: none;
+}
+
+main section{
+  margin-top: -50px;
+}
+
+main section blockquote{
+  padding: 50px;
+  font-size: 18px;
+
+}
+section div{
+  width: 10%;
+  margin: -15px 80%;
+}
+footer{
+  /* padding-bottom: 20px; */
+ /* margin-top: ; */
+  margin-top: 269px;
+  padding-top: 80px;
+}
+
+.App-logo{
+padding: 50px;
+}
+.qoute{
+  margin-top: -95px;
+  /* background-color: red; */
+  padding-bottom: 10px;
+}
+
+
+  }
+  @media screen and  (min-width: 800px){
+    html body{
+width: 100%;
+    }
+footer{
+  margin-top: 372px;
+
+}
+  }
