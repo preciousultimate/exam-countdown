@@ -88,10 +88,36 @@ const words = [
 "Reading is escape, and the opposite of escape, it's a way to make contact with reality after a day of making things up, and it's a way of making contact with someone else's imagination after a day that's all too real, -Nora Ephron",
 "Reading makes immigrants of us all, it takes us away from home, but more important, it finds homes for us everywhere, -Jean Rhys"
     ]
+const gosple =[ "I can do all things through Christ who strengthens me.",
+"For God did not give us a spirit of fear, but of power and of love and of a sound mind.",
+"Trust in the Lord with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight.",
+"Come to me, all you who are weary and burdened, and I will give you rest.",
+
+"Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go.",
+"And we know that in all things God works for the good of those who love him, who have been called according to his purpose.",
+"Let us not become weary in doing good, for at the proper time we will reap a harvest if we do not give up.",
+"God is our refuge and strength, an ever-present help in trouble.",
+"For the Lord will fulfill his purpose for me; your steadfast love, O God, endures forever.",
+"Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God.",
+"The Lord will guide you always; he will satisfy your needs in a sun-scorched land and will strengthen your frame. You will be like a well-watered garden, like a spring whose waters never fail.",
+"Commit your way to the Lord; trust in him and he will do this.",
+"I will instruct you and teach you in the way you should go; I will counsel you with my loving eye on you.",
+"For our light and momentary troubles are achieving for us an eternal glory that far outweighs them all.",
+"The Lord is my shepherd, I lack nothing.",
+"God is able to bless you abundantly, so that in all things at all times, having all that you need, you will abound in every good work."]
     const action = Math.floor(Math.random() * words.length);
+    const action2 = Math.floor(Math.random() * gosple.length);
+const randomGosple =() =>{
+    const action2 = Math.floor(Math.random() * gosple.length);
+    const link= 'https://preciousultimate.github.io/exam-countdown/'
+
+    document.querySelector('.qoute').innerHTML=(gosple[action2]);
+
+    document.querySelector('div a').href =`whatsapp://send?text=${gosple[action2]} from ${link}`
+}
 const randomQuote =() =>{
     const action = Math.floor(Math.random() * words.length);
-        const link= 'https://preciousultimate.github.io/exam-countdown/'
+    const link= 'https://preciousultimate.github.io/exam-countdown/'
     
     document.querySelector('.qoute').innerHTML=(words[action]);
 
@@ -149,7 +175,7 @@ const api=()=>{
 
 
 const countTimer = setInterval( function(){
-    const endTime = new Date("August 11, 2024 24:00:00").getTime();        
+    const endTime = new Date("2024-08-11T23:59:59Z").getTime();        
     const CurrentTime = new Date().getTime();
     const distance = endTime - CurrentTime;
     const timeinDays = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -169,10 +195,14 @@ document.querySelector('#seconds').innerHTML= timeinSeconds;
     document.querySelector('.qoute').style.marginLeft ="50px "
     }
     
-     if(timeinSeconds === 45 || timeinSeconds === 25 ){
-         randomQuote()
-        
-    }
+    if(timeinSeconds === 45 || timeinSeconds === 25 ){
+        randomQuote()
+       
+   }
+   if (timeinSeconds===5) {
+    randomGosple()
+    
+   }
     
     }, 1000)
     
@@ -182,8 +212,7 @@ document.querySelector('#copyright').innerHTML= ` Copyright &copy; ${copyright}`
 
 
 const permit = setInterval(() => {
-    const notifyinSeconds = new Date().getSeconds()
-    // console.log(notifyinSeconds)
+    const notifyinSeconds = new Date().getSeconds();
 
     
     if(notifyinSeconds === 30 || notifyinSeconds === 15){

@@ -102,9 +102,19 @@ li input :last-child{
 }
 footer{
     margin: 95px auto;
-    color:hsl(233, 14%, 35%);
+    color: #fff;
 }
 
+footer a{
+    margin: auto;
+    text-decoration: underline;
+    color: #fff;
+
+}
+footer a:visited{
+    text-decoration: none;
+    color: #ffffff9a;
+}
 .check{
     /* display: grid;
     place-content: center; */
@@ -131,9 +141,15 @@ footer{
 
 #error{
     color: red;
-    margin: 10px  30px;
+    margin: 10px  auto;
     
 }
+#copyright{
+
+    margin-top: 80px;
+    
+}
+
 .countainer{
     border-bottom-left-radius: 8px;
     border-bottom-right-radius:8px;
@@ -253,6 +269,11 @@ footer{
         border-color:hsl(235, 24%, 19%);
     }
 
+    footer a:hover{
+cursor: pointer;
+text-decoration: none;
+    }
+
     .cross{
         visibility: hidden;
         margin-left: 450px;
@@ -287,5 +308,6 @@ footer{
 
         background-repeat: no-repeat;
     }
+    
     
 }

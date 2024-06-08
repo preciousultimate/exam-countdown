@@ -226,7 +226,7 @@ const showNotification = () => {
     // navigate to a URL when clicked
     notification.addEventListener('click', () => {
 
-        window.open('https://preciousultimate.github.io/exam-countdown/todo.html', '_blank');
+        window.open('https://preciousultimate/github.io/exam-countdown/todo.html', '_blank');
     });
 }
 const permit = setInterval(() => {
