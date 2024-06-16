@@ -109,15 +109,14 @@ const gosple =[ "I can do all things through Christ who strengthens me.",
     const action2 = Math.floor(Math.random() * gosple.length);
 const randomGosple =() =>{
     const action2 = Math.floor(Math.random() * gosple.length);
-    const link= 'https://preciousultimate.github.io/exam-countdown/'
-
+    const link= 'https://examcount-down.netlify.app/'
     document.querySelector('.qoute').innerHTML=(gosple[action2]);
 
     document.querySelector('div a').href =`whatsapp://send?text=${gosple[action2]} from ${link}`
 }
 const randomQuote =() =>{
     const action = Math.floor(Math.random() * words.length);
-    const link= 'https://preciousultimate.github.io/exam-countdown/'
+    const link= 'https://examcount-down.netlify.app/'
     
     document.querySelector('.qoute').innerHTML=(words[action]);
 
@@ -151,7 +150,7 @@ const showNotification = () => {
     // navigate to a URL when clicked
     notification.addEventListener('click', () => {
 
-        window.open('https://preciousultimate/github.io/exam-countdown/', '_blank');
+        window.open('https://examcount-down.netlify.app/', '_blank');
     });
 }
 const api=()=>{
